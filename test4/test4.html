@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+	 <title>Test 4</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/test4.css"/>
+    <script src="test4.js"></script>
+</head>
+<body>
+  <h3 id="yourName">Your Name</h3>
+  <!--FORM-->
+  <form id="form_name" name="form_name" method="post" onreset="alert('The form will be reset')" action="https://httpbin.org/post">
+        
+    <!--Name Label-->
+     <label id="this_name">* Name:</label>
+     <input type = "text" name = "uName" placeholder = "Lastname, Firstname"/>
+     
+     <br>
+     <br>
+     
+    <!--Program Label-->
+    <label>Program: </label>
+     <select placeholder = "Select a program">
+         <option disabled selected value>Select a program</option>
+         <option>BSD</option>
+         <option>IFS</option>
+         <option>CPA</option>
+     </select>
+     
+     <br>
+     <br>
+     
+     <!--Hobbies Label-->
+     <label>My hobbies: </label>
+     <input id="checkbox" type="checkbox" name="reading" checked>
+     Reading
+     <input id="checkbox" type="checkbox" name="swimming">
+     Swimming
+     <input id="checkbox"  type="checkbox" name="travelling">
+     Travelling
+     
+     <br>
+     <br>
+     
+     <!--Submit and Reset-->
+     <input type="submit" value="Submit">
+     <input type="reset" value="Reset">
+     
+     <br>
+     <br>
+     
+     <!--Add Luck-->
+      <input type="button" onclick="showText()" value="Add Luck">
+     
+     <p id="paragraph">
+     </p>
+     
+     
+  </form>
+   
+    
+</body>
+</html>

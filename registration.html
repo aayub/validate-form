@@ -1,0 +1,206 @@
+<!--
+Name: Aayushi Baral
+Student Number: 137543187
+BTI225
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Registration - Aayushi Baral</title>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/normalize.css"/>
+	
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/main.css"/>
+   <script src="js/registration.js"></script>
+    </head>
+    <body>
+    <!--HEADER-->
+    <header>
+       <img src="media/brush.png">
+        <h1>Aayushi Baral</h1>
+    </header>
+    <!--NAV-->
+    <div class="all">
+     <nav>
+		<div>
+		<ul class="side-nav">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="list.html">List</a>
+            </li>
+            <li><a href="table.html">Table</a>
+            </li>
+            <li><a href="image.html">Image</a>
+            </li>
+            <li><a href="audio.html">Audio</a>
+            </li>
+            <li><a href="video.html">Video</a>
+            </li>
+            <li><a href="seneca.html">Seneca</a>
+            </li>
+            <li><a href="canadianPT.html">Canadian Provinces and Territories</a>
+            </li>
+            <li><a href="registration.html">Registration</a>
+            </li>
+            <li><a href="honesty.html">Honesty</a>
+            </li>
+		</ul>
+		</div>
+	</nav>
+     
+     <!--FORM-->
+      <section class="formSection">
+       <form id="formX" name="frm_ph" method = "post"
+        action = "https://httpbin.org/post"
+        onreset="alert('The form will be reset')"
+        onsubmit = "return validateForm()"
+        style="max-width:800px;margin:auto;padding:10px"
+         >
+          
+          <label>Name:</label>
+          <!--Firstname & Lastname-->
+          <div class="container">
+          <i class="fa fa-id-card icon"></i>
+           <input class="input-field" type="text" name="firstname"
+           id="firstname" placeholder="Your first name goes here">
+           <!--Error-->
+           <p class="error"></p>
+           <input class="input-field" type="text" name="lastname"
+           id="lastname" placeholder="Your last name goes here">
+           <!--Error-->
+           <p class="error"></p>
+           </div>
+           
+           
+          
+          <label>Username:</label>
+          <!--Username-->
+          <div class="container">
+          <i class="fa fa-user icon"></i>
+           <input class="input-field" type="text" name="username" id="username" placeholder="Username">
+           <!--Error-->
+           <p class="error">
+           </p>
+           </div>
+           
+           
+          
+          <label>Password:</label>
+          <!--Password-->
+          <div class="container">
+          <i class="fas fa-key icon"></i>
+           <input class="input-field" type="text" name="password" id="password" placeholder="Password">
+           <!--Error-->
+           <p class="error"></p>
+          </div>
+          
+          
+          <label>Confirm Password:</label>
+          <!--Password Confirm-->
+          <div class="container">
+          <i class="fas fa-check icon"></i>
+           <input class="input-field" type="text" name="confirm_pw" 
+           id="confirm_pw" placeholder="Confirm Password">
+           <!--Error-->
+           <p class="error"></p>
+           </div>
+           
+           <label>Phone Number:</label>
+          <!--Phone Number-->
+          <div class="container">
+          <i class="fas fa-phone icon"></i>
+           <input class="input-field" id="phone" type="text" name="phoneNum" placeholder="Phone Number"
+           >
+           <!--Error-->
+           <p class="error"></p>
+           </div>
+          
+          <label>Email:</label>
+          <!--Email-->
+          <div class="container">
+          <i class="fas fa-envelope icon"></i>
+           <input class="input-field" id="email" type="email" name="email" placeholder="Email">
+           <!--Error-->
+           <p class="error"></p>
+           </div>
+          
+          <label>Street Name:</label>
+          <!--Street Name-->
+          <div class="container">
+          <i class="fas fa-road icon"></i>
+            <input class="input-field" id="street" type="text" name="street" placeholder="Street name and number">
+            <!--Error-->
+           <p class="error"></p>
+           </div>
+          
+          <label>City:</label>
+          <!--City-->
+          <div class="container">
+          <i class="fas fa-city icon"></i>
+           <input class="input-field" id="city" type="text" name="city" placeholder="City">
+           <!--Error-->
+           <p class="error"></p>
+           </div>
+          
+          <label>Province and Territories</label>
+          <!--Province and Territories-->
+          <div class="container">
+          <i class="fab fa-canadian-maple-leaf icon"></i>
+           <select id="selectProvince">
+               <option>Ontario</option>
+               <option>British Columbia</option>
+               <option>Quebec</option>
+               <option>Alberta</option>
+               <option>Nova Scotia</option>
+               <option>Saskatchewan</option>
+               <option>Manitoba</option>
+               <option>New Brunswich</option>
+               <option>Newfoundland and Labrador</option>
+               <option>Prince Edward Island</option>
+               <option>Nunavut</option>
+               <option>Yukon</option>
+               <option>Northwest Territories</option>
+           </select> 
+           </div>
+          
+          <label>Postal Code</label>
+          <!--Postal Code-->
+          <div class="container">
+          <i class="fas fa-street-view icon"></i>
+           <input class="input-field" id="postal" placeholder="Postal Code" type="text" name="postal">
+           <!--Error-->
+           <p class="error"></p>
+           </div>
+          
+           
+          
+          
+          <!--Submit and Reset-->
+          <div>
+           <input class="input-field" type="submit" value="Submit">
+           <input class="input-field" type="reset" onclick="reset" value="Reset">
+           </div>
+       </form>
+        </section>
+       
+       <!-- ASIDE -->
+       <aside class="side-element">
+          <div>
+           <img src="media/email.png">
+           <p>
+               Email: abaral1@mysenecac.ca
+           </p>
+           </div>
+       </aside>
+       
+    </div>
+       <footer>
+	  <div class="center">
+		  &copy; 2019 Aayushi Baral
+	  </div>
+	</footer>
+        
+    </body>
+</html>

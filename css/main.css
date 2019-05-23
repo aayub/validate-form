@@ -1,0 +1,142 @@
+body{
+    font-family: "Arial";
+    width: 1200px; /*fixed width*/
+}
+
+nav{
+    background-color: black;
+    margin: 10px;
+
+}
+
+.side-nav{
+    height: 100%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-decoration: none;
+    list-style: none;
+    flex: 15%;
+}
+
+.side-nav a{
+    padding: 8px 10px 8px 10px;
+    margin: 8px 10px 8px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    color: white;
+}
+
+.side-nav a:hover{
+    color: darkgray;
+}
+
+.formSection{
+    height: 100%;
+    background-color: wheat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section{
+    align-content: center;
+}
+
+
+header h1{
+    text-align: center;
+    color: white;
+}
+
+header{
+    background-color: skyblue;
+    margin: 10px 10px 0px 10px;
+    padding: 0px;
+}
+.side-element{
+    width: 100%;
+    padding: 10px;
+}
+
+aside p{
+font-weight: bold;
+    color: black;
+}
+
+aside div{
+    background-color: skyblue;
+    padding: 10px;
+}
+
+.container{
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: skyblue;
+    color: white;
+    min-width: 40px;
+    text-align: center;
+}
+
+.input-field:focus{
+    border: 5px solid skyblue;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+aside img {
+    width: 100px;
+    height: 10%;
+}
+
+aside{
+flex: 10%;
+
+}
+
+section{
+    flex: 80%;
+}
+
+
+header{
+    display: flex;
+    padding-left: 40%;
+}
+
+header img{
+    width: 5%;
+    height: 5%;
+}
+
+.all{
+    display: flex;
+}
+
+footer{
+    font-size: 20px;
+    background-color: skyblue;
+    color: white;
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+}
+
+.wrong-input {
+    border: 5px solid red;
+}
+
+.error {
+    color: red;
+}
+
+
+

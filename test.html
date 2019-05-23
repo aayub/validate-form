@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Samarimoghadam </title>
+<link href="CSS/link.css" rel="stylesheet"/>
+<script src="test.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="top">
+            <h1> Registration </h1>
+            <img id="header-logo" alt="Sev's Computer Store" src="Image/yellow-no-background-pc.png">        
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"  >Home</a> </li>
+                <br>
+                <li><a href="registration.html" id="regButt"> Registration </a>  </li>
+                <li></li>
+            </ul>
+         </nav>
+
+        <aside class="sidebar" id="register-side">
+            <form id="signup" name="signup" method="post" action="https://httpbin.org/post" autocomplete="on" onsubmit="return formValidation()">
+                <!-- <fieldset>
+                    <legend>"Registration"</legend> -->
+                <h4> Full Name </h4>
+                <p> <input type="text" name="fname" title="Jane" placeholder="First Name" tabindex="1" onchange="testfname()" required></p>
+                <p> <input type="text" name="lname" title="Doe" placeholder="Last Name" tabindex="2" onchange="testlName()" required></p>
+                <h4> Shipping Address </h4>
+                <p> <input  type="text" name="unitNum" title="1" tabindex="3" placeholder="Unit#" onchange="testunit()" required></p>
+                <p> <input  type="text" name="stNum" title="70" placeholder="Street#" tabindex="4" onchange="checkStNum()"  required></p>
+                <p> <input  type="text" name="stName" title="The Pond Rd" placeholder="Street Name" tabindex="5"onchange="checkStName()" required></p>
+                <p> <input  type="text" name="city" title="Toronto" placeholder="City" tabindex="6" onchange="checkCity()" required></p>
+                <!-- <p> <input type="text" name="province" title="Ontario" placeholder="Province" tabindex="7" required></p> -->
+                <p> <select name="province" tabindex="7">
+                        <option value="AB"> Alberta</option>
+                        <option value="BC"> British Columbia</option>
+                        <option value="MB"> Manitoba</option>
+                        <option value="NB"> New Brunswick</option>
+                        <option value="NL"> Newfoundland </option>
+                        <option value="NS"> Nova Scotia</option>
+                        <option value="ON" selected> Ontario</option>
+                        <option value="PE"> Prince Edward Island</option>
+                        <option value="QC"> Quebec</option>
+                        <option value="SK"> Saskatchewan</option>
+                </p></select>
+                <p> <input  type="text" name="postal" title="A1A2B2" placeholder="Postal Code" onchange="checkZip()" tabindex="8" required></p>
+                <h4>Contact Information</h4>
+                <p> <input  type="tel" name="tel" title="111-111-1111" placeholder="Phone#" tabindex="9" onchange="checkTel()" required></p>
+                <p> <input  type="email" name="email" title="example@domain.com" placeholder="Email" tabindex="10" required></p>
+                <h4> Sign-in Information</h4>
+                <p class="single"> <input type="text" name="user" title="Enter Username" placeholder="Username" tabindex="11" onchange="testuser()" required></p>
+                <p><input id="pass" type="password" name="pass" title="Enter Password" placeholder="Password" tabindex="11" onchange="checkPass()" required></p>
+                <p><input id="rePass" type="password" name="rePass" title="Repeat Password" placeholder="Password" tabindex="12" onchange="checkPassMatch()" required></p>
+                <br> <br>
+                <p><input class="submit" type="submit" title="Submit" tabindex="13"></p>
+                <p><input class="reset" type="reset" title="Reset" tabindex="14" onclick="reseterr()"></p>
+                <input type="hidden" name="lastName" id="lastName" value="Samarimoghadam" />
+                <input type="hidden" name="studentId" id="studentId" value="137036174" /> 
+            <!-- </fieldset> -->
+            </form>
+        </aside>
+		<div id="regpage"></div>
+
+        <section class="main-body" id="reg-body" >
+        </section>
+        
+        <footer class="footer">
+        <p> Powered by Ali Samarimoghadam </p>
+        </footer>
+    </div>
+</body>
+
+</html>

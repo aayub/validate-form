@@ -1,0 +1,92 @@
+/*
+Name: Aayushi Baral
+Student Number: 137543187
+BTI225
+*/
+.main-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main-container nav{
+    width: 30%;
+    float: left;
+}
+
+.main-container .main{
+    width: 70%;
+    float: right;
+}
+
+.main-container header{
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom: solid 1px #cccccc;
+    margin-bottom: 30px;
+}
+
+.main-container header h1{
+    width: 70%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.main-container footer{
+    /*top,right,bottom,left*/
+    clear: both;
+    padding: 20px 10px;
+    background-color: #eeeeee;
+    border-top: solid 1px #cccccc;
+    font-size: 13px;
+}
+
+#logo{
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#logo img{
+    width: 94px;
+    vertical-align: middle;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+div.province{
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+}
+
+div.province.description{
+    /*top,right,bottom,left*/
+    max-height: 165px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 8px 0px;
+}
+
+div.province a{
+    display: block;
+    text-align: middle;
+    background-color: #555555;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 5px;
+}
+
+img.flag{
+    width: 100%;
+}

@@ -1,0 +1,24 @@
+#this_name{
+    color: red;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #AAF9AA;
+    
+}
+
+#checkbox{
+}
+
+
